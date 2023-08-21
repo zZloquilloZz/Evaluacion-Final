@@ -40829,10 +40829,7 @@ var router = createBrowserRouter([{
   path: '/ver-vendedor/:id',
   element: /*#__PURE__*/React.createElement(PageVerVendedor, null)
 }, {
-  path: '/nuevo-vendedor/:id/nuevo-venta',
-  element: /*#__PURE__*/React.createElement(PageNuevoVendedor, null)
-}, {
-  path: '/nueva-venta',
+  path: '/nuevo-vendedor/:id/nueva-venta',
   element: /*#__PURE__*/React.createElement(PageNuevaVenta, null)
 }]);
 ReactDOM.render( /*#__PURE__*/React.createElement(React.StrictMode, null, /*#__PURE__*/React.createElement(RouterProvider, {
@@ -41691,7 +41688,7 @@ var PageVerVendedor = function PageVerVendedor() {
       key: ventas.ID
     }, /*#__PURE__*/React.createElement("td", null, ventas.CLIENTE), /*#__PURE__*/React.createElement("td", null, ventas.PRODUCTO));
   }))), /*#__PURE__*/React.createElement(Link, {
-    to: "/ver-vendedor/".concat(id, "/nuevo-venta")
+    to: "/ver-vendedor/".concat(id, "/nueva-venta")
   }, "Nueva Venta"), " | ", /*#__PURE__*/React.createElement(Link, {
     to: "/"
   }, "Volver"));

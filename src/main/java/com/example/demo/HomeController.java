@@ -28,11 +28,4 @@ public class HomeController {
         List<Map<String, Object>> queryResult = jdbcTemplate.queryForList(sql, id);
         return queryResult;
     }
-    /**
-     * [
-     *   {"campo": "Valor"},
-     *   {"campo": 2},
-     * ]
-     * List<Map<String, Object>>
-     */
 }

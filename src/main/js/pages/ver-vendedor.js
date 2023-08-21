@@ -62,7 +62,7 @@ const PageVerVendedor = ()=>{
                     })}
                 </tbody>
             </table>
-            <Link to={`/ver-vendedor/${id}/nuevo-venta`}>Nueva Venta</Link> | <Link to="/">Volver</Link>
+            <Link to={`/ver-vendedor/${id}/nueva-venta`}>Nueva Venta</Link> | <Link to="/">Volver</Link>
         </>
     );
 }
