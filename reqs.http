@@ -1,0 +1,33 @@
+@server = https://legendary-fortnight-wwjjrpwj7jrc665-8080.app.github.dev
+@productos = {{server}}/api/productos
+@vendedores = {{server}}/api/vendedores
+###
+@ventas = {{server}}/api/ventas
+###
+GET {{ventas}}
+###
+GET {{productos}}
+###
+POST {{productos}}
+Content-Type: application/json
+
+{
+  "nombre" : "Camara HP",
+  "categoria" : "Camara",
+  "descripcion" : "Para tomarte fotos"
+}
+###
+GET {{vendedores}}
+###
+PATCH {{vendedores}}/1
+Content-Type: application/json
+
+{
+  "nombre" : "Jaime Hendrix"
+}
+###
+GET {{server}}/api/ventas/1
+###
+GET {{server}}/api/clientes/1
+###
+GET {{server}}/api/ventas/1/formacion
