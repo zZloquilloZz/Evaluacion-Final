@@ -40829,7 +40829,7 @@ var router = createBrowserRouter([{
   path: '/ver-vendedor/:id',
   element: /*#__PURE__*/React.createElement(PageVerVendedor, null)
 }, {
-  path: '/nuevo-vendedor/:id/nueva-venta',
+  path: '/ver-vendedor/:id/nueva-venta',
   element: /*#__PURE__*/React.createElement(PageNuevaVenta, null)
 }]);
 ReactDOM.render( /*#__PURE__*/React.createElement(React.StrictMode, null, /*#__PURE__*/React.createElement(RouterProvider, {
