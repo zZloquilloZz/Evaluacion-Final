@@ -40,7 +40,7 @@ const PageNuevaVenta = () => {
         })
         client({
             method: 'GET',
-            path: '/api/producto'
+            path: '/api/productos'
         }).done(response=>{
             let productos2 = [];
             response.entity._embedded.productos.map(producto => {

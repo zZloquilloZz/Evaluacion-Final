@@ -41369,7 +41369,7 @@ var PageNuevaVenta = function PageNuevaVenta() {
     });
     client({
       method: 'GET',
-      path: '/api/producto'
+      path: '/api/productos'
     }).done(function (response) {
       var productos2 = [];
       response.entity._embedded.productos.map(function (producto) {
