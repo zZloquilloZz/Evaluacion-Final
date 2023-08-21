@@ -21,7 +21,7 @@ class PageHome extends React.Component {
 	render() {
 		return (
 			<>
-                <h1>Tecnologia</h1>
+                <h1>Mi Vecino Fiel</h1>
 
 				<div style={{"width": "100%","display": "flex"}} >
 

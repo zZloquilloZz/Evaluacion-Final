@@ -28,32 +28,32 @@ public class DatabaseLoader implements CommandLineRunner {
 	@Override
 	public void run(String... strings) throws Exception {
 
-		Producto P001 = new Producto("Leche Gloria", "Lacteos", "Vitamina");
-		Producto P002 = new Producto("Yogurth", "Lacteos", "Vitamina");
-		Producto P003 = new Producto("Cereales", "cereales", "Vitaminas B12");
-		this.repositoryP.save(P001);
-		this.repositoryP.save(P002);
-		this.repositoryP.save(P003);
+		Producto P1 = new Producto("Leche Gloria", "Lacteos", "Vitamina");
+		Producto P2 = new Producto("Yogurth", "Lacteos", "Vitamina");
+		Producto P3 = new Producto("Cereales", "cereales", "Vitaminas B12");
+		this.repositoryP.save(P1);
+		this.repositoryP.save(P2);
+		this.repositoryP.save(P3);
 
 		
-		Vendedor V001 = new Vendedor("Ademir Fernandez");
-		Vendedor V002 = new Vendedor("jose Perez");
-		this.repositoryV.save(V001);
-		this.repositoryV.save(V002);
+		Vendedor V1 = new Vendedor("Ademir Fernandez");
+		Vendedor V2 = new Vendedor("jose Perez");
+		this.repositoryV.save(V1);
+		this.repositoryV.save(V2);
 
-		Cliente C001 = new Cliente("Maria Chavez");
-		Cliente C002 = new Cliente("Miles Cubas");
-		Cliente C003 = new Cliente("Juan lopez");
-		this.repositoryC.save(C001);
-		this.repositoryC.save(C002);
-		this.repositoryC.save(C003);
+		Cliente C1 = new Cliente("Maria Chavez");
+		Cliente C2 = new Cliente("Miles Cubas");
+		Cliente C3 = new Cliente("Juan lopez");
+		this.repositoryC.save(C1);
+		this.repositoryC.save(C2);
+		this.repositoryC.save(C3);
 
-		Venta VT001 = new Venta(P001,V002,C003);
-		Venta VT002 = new Venta(P003,V001,C001);
-		Venta VT003 = new Venta(P002,V001,C002);
-		this.repositoryT.save(VT001);
-		this.repositoryT.save(VT002);
-		this.repositoryT.save(VT003);
+		Venta VT1 = new Venta(P1,V2,C3);
+		Venta VT2 = new Venta(P3,V1,C1);
+		Venta VT3 = new Venta(P2,V1,C2);
+		this.repositoryT.save(VT1);
+		this.repositoryT.save(VT2);
+		this.repositoryT.save(VT3);
 
 	}
 }
